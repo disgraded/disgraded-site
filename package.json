@@ -9,7 +9,7 @@
     "test": "react-scripts test",
     "react:build": "react-scripts build",
     "react:start": "react-scripts start",
-    "deploy:github": "gh-pages -b master -d build -message deploy-0.0.2",
+    "deploy:github": "gh-pages -b master -d build",
     "sass:build": "node-sass --output-style compressed style/index.scss public/style.css",
     "sass:watch": "node-sass -w --output-style compressed style/index.scss public/style.css"
   },

@@ -1,17 +1,17 @@
 {
   "name": "disgraded-site",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "private": true,
-  "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "2.1.8"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "dev": "run-p sass:build sass:watch react:start",
+    "build": "run-p sass:build react:build",
+    "deploy": "run-s build deploy:github",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "react:build": "react-scripts build",
+    "react:start": "react-scripts start",
+    "deploy:github": "gh-pages -b master -d build -message 0.0.1",
+    "sass:build": "node-sass --output-style compressed style/index.scss public/style.css",
+    "sass:watch": "node-sass -w --output-style compressed style/index.scss public/style.css"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -21,5 +21,29 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bootstrap": "^4.3.1",
+    "enum": "^2.5.0",
+    "history": "^4.9.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.15.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^6.0.1",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "2.1.8",
+    "react-tap-event-plugin": "^3.0.3",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1",
+    "node-sass": "^4.11.0",
+    "npm-run-all": "^4.1.5"
+  }
 }

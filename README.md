@@ -13,7 +13,6 @@
 2. `npm run dev`
 3. Put some react.js code
 4. push to "source" branch
-5. `npm run deploy`
 
 ## Contributing
 1. Fork (and then `git clone https://github.com/<your-username-here>/disgraded-site.git`).

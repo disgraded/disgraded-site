@@ -3,7 +3,7 @@ import React from 'react'
 const Navbar = ({ title, onClick, children }) => {
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-light">
+        <nav className="navbar fixed-top navbar-expand-lg navbar-dark">
             <div className="container">
                 <a className="navbar-brand" href="#brand" onClick={(e) => {
                     e.preventDefault()
@@ -11,7 +11,7 @@ const Navbar = ({ title, onClick, children }) => {
                         onClick()
                     }
                 }}>
-                    {title}
+                    <img height="80" src="/img/logo.png" alt="DisGraded Logo" />
                 </a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>

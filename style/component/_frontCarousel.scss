@@ -1,0 +1,24 @@
+.front-carousel {
+    width: 100vw;
+    height: inherit;
+    background: #000;
+
+    .carousel-background {
+        widows: 100%;
+        position: absolute;
+        height: inherit;
+        overflow: hidden;
+
+        img {
+            width: inherit;
+            display: block;
+            margin: auto;
+        }
+    }
+
+    .carousel-content {
+        position: relative;
+        height: inherit;
+        overflow: hidden;
+    }
+}

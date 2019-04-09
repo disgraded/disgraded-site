@@ -6,9 +6,9 @@ import statisticsReducer from './reducer/statisticsReducer'
 
 let getMiddleware = () => {
     if (process.env.NODE_ENV === 'development') {
-        return applyMiddleware(thunk, logger);
+        return applyMiddleware(thunk, logger)
     } else {
-        return applyMiddleware(thunk);
+        return applyMiddleware(thunk)
     }
 }
 
@@ -20,5 +20,5 @@ let store = createStore(
 );
 
 export default () => {
-    return store;
+    return store
 }

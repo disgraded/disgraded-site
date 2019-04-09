@@ -1,5 +1,5 @@
-import { createBrowserHistory } from 'history';
-import ReduxUtil from './reduxUtil';
+import { createBrowserHistory } from 'history'
+import ReduxUtil from './reduxUtil'
 
 export default class HistoryApi {
     
@@ -9,23 +9,23 @@ export default class HistoryApi {
         keyLength: 6
     });
 
-    reduxUtil = ReduxUtil.getInstance();
+    reduxUtil = ReduxUtil.getInstance()
 
     forward(path) {
-        this.api.push(path);
-        this.reduxUtil.changeRoute(path);
+        this.api.push(path)
+        this.reduxUtil.changeRoute(path)
     }
     
     back() {
         // TODO; implement redux helper for changing route
-        this.api.goBack();
+        this.api.goBack()
     }
 }
 
-var instance = null;
+var instance = null
 HistoryApi.getInstance = function() {
     if (instance === null) {
-        instance = new HistoryApi();
+        instance = new HistoryApi()
     }
-    return instance;
+    return instance
 }

@@ -1,9 +1,9 @@
-import reduxStore from "../reduxStore";
-import { CHANGE_ROUTE } from '../action/actionTypes';
+import reduxStore from "../reduxStore"
+import { CHANGE_ROUTE } from '../action/actionTypes'
 
-class ReduxUtil {
+export default class ReduxUtil {
 
-    store = reduxStore();
+    store = reduxStore()
 
     changeRoute(path) {
         this.store.dispatch({
@@ -16,9 +16,7 @@ class ReduxUtil {
 let instance = null;
 ReduxUtil.getInstance = () => {
     if (instance === null) {
-        instance = new ReduxUtil();
+        instance = new ReduxUtil()
     }
-    return instance;
-};
-
-export default ReduxUtil;
+    return instance
+}

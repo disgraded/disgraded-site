@@ -2,15 +2,15 @@
     width: 100vw;
     height: inherit;
     background: #000;
+    overflow: hidden;
 
     .carousel-background {
-        widows: 100%;
-        position: absolute;
+        width: inherit;
         height: inherit;
+        position: absolute;
         overflow: hidden;
 
         img {
-            width: inherit;
             display: block;
             margin: auto;
         }

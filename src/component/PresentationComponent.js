@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default ({ children, imgSrc }) => (
+export default ({ children }) => (
     <div className="front-carousel">
         <div className="carousel-background">
-            <img src={imgSrc} alt="" />
+            
         </div>
         <div className="carousel-content">
             {children}

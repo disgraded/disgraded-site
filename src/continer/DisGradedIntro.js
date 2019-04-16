@@ -1,21 +1,19 @@
 import React, { Component } from 'react'
-import FrontCarousel from '../component/FrontCarouselComponent'
+import Presentation from '../component/PresentationComponent'
 
 export default class DisGradedIntro extends Component {
     render() {
         return (
             <div className="container-disgraded-intro">
-                <FrontCarousel imgSrc="/img/disgraded-bg.jpeg">
+                <Presentation>
                     <div className="container">
                         <div className="row">
                             <div className="col-md-12">
-                                <div className="text-center">
-                                    
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
-                </FrontCarousel>
+                </Presentation>
             </div>
         )
     }

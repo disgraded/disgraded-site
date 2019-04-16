@@ -1,11 +1,11 @@
 import React from 'react'
 
 export default ({ children }) => (
-    <div className="front-carousel">
-        <div className="carousel-background">
+    <div className="presentation">
+        <div className="presentation-background">
             
         </div>
-        <div className="carousel-content">
+        <div className="presentation-content">
             {children}
         </div>
     </div>

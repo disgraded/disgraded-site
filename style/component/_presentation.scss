@@ -13,14 +13,104 @@
 .presentation {
     width: 100vw;
     height: inherit;
-    background: #000;
     overflow: hidden;
 
-    .presentation-background {
+    .presentation-content {
+        position: absolute;
         width: inherit;
         height: inherit;
-        position: absolute;
         overflow: hidden;
+    }
+
+    .presentation-content-color-white {
+        background-image: linear-gradient(to top, #FAFAFA 20%, #F5F5F5 80%);
+    }
+
+    .presentation-content-color-black {
+        background-image: linear-gradient(to top, #424242 20%, #212121 80%);
+    }
+
+    .presentation-content-color-red {
+        background-image: linear-gradient(to top, #E53935 20%, #B71C1C 80%);
+    }
+
+    .presentation-content-color-pink {
+        background-image: linear-gradient(to top, #E91E63 20%, #C2185B 80%);
+    }
+
+    .presentation-content-color-purple {
+        background-image: linear-gradient(to top, #9C27B0 20%, #7B1FA2 80%);
+    }
+
+    .presentation-content-color-deep {
+        background-image: linear-gradient(to top, #673AB7 20%, #512DA8 80%);
+    }
+
+    .presentation-content-color-indigo {
+        background-image: linear-gradient(to top, #3F51B5 20%, #303F9F 80%);
+    }
+
+    .presentation-content-color-blue {
+        background-image: linear-gradient(to top, #2196f3 20%, #1976d2 80%);
+    }
+
+    .presentation-content-color-lightblue {
+        background-image: linear-gradient(to top, #03a9f4 20%, #0288d1 80%);
+    }
+
+    .presentation-content-color-cyan {
+        background-image: linear-gradient(to top, #00bcd4 20%, #0097a7 80%);
+    }
+
+    .presentation-content-color-teal {
+        background-image: linear-gradient(to top, #009688 20%, #00796b 80%);
+    }
+
+    .presentation-content-color-green {
+        background-image: linear-gradient(to top, #4caf50 20%, #388e3c 80%);
+    }
+
+    .presentation-content-color-lightgreen {
+        background-image: linear-gradient(to top, #8bc34a 20%, #689f38 80%);
+    }
+
+    .presentation-content-color-lime {
+        background-image: linear-gradient(to top, #cddc39 20%, #afb42b 80%);
+    }
+
+    .presentation-content-color-yellow {
+        background-image: linear-gradient(to top, #ffeb3b 20%, #fbc02d 80%);
+    }
+
+    .presentation-content-color-amber {
+        background-image: linear-gradient(to top, #ffc107 20%, #ffa000 80%);
+    }
+
+    .presentation-content-color-orange {
+        background-image: linear-gradient(to top, #ff9800 20%, #f57c00 80%);
+    }
+
+    .presentation-content-color-deeporange {
+        background-image: linear-gradient(to top, #ff5722 20%, #e64a19 80%);
+    }
+
+    .presentation-content-color-brown {
+        background-image: linear-gradient(to top, #795548 20%, #5d4037 80%);
+    }
+
+    .presentation-content-color-grey {
+        background-image: linear-gradient(to top, #9e9e9e 20%, #616161 80%);
+    }
+
+    .presentation-content-color-bluegrey {
+        background-image: linear-gradient(to top, #607d8b 20%, #455a64 80%);
+    }
+
+    .presentation-animation {
+        position: relative;
+        height: inherit;
+        overflow: hidden;
+        pointer-events: none;
 
         img {
             display: block;
@@ -42,7 +132,6 @@
                 overflow: hidden;
                 height: 100%;
                 bottom: -1px;
-                background-image: linear-gradient(to top, #455A64 30%, #263238 80%);
 
                 .wave-bg {
                     position: absolute;
@@ -90,13 +179,5 @@
                 z-index: 5;
             }
         }
-
-
-    }
-
-    .presentation-content {
-        position: relative;
-        height: inherit;
-        overflow: hidden;
     }
 }

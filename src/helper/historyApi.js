@@ -17,7 +17,7 @@ export default class HistoryApi {
     }
     
     back() {
-        // TODO; implement redux helper for changing route
+        // TODO: implement redux helper for changing route
         this.api.goBack()
     }
 }

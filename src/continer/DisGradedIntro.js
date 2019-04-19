@@ -5,7 +5,7 @@ export default class DisGradedIntro extends Component {
     render() {
         return (
             <div className="container-disgraded-intro">
-                <Presentation bg="deeporange">
+                <Presentation bg="cyan">
                     <div className="container">
                         <div className="row">
                             <div className="col-md-8">

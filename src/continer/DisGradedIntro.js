@@ -12,7 +12,7 @@ export default class DisGradedIntro extends Component {
                                 
                             </div>
                             <div className="col-md-4">
-                            <img alt="" src="https://img.pngio.com/meet-your-google-assistant-mobile-phone-png-png-335_679.png" height="100%" />
+                                <img alt="" src="https://img.pngio.com/meet-your-google-assistant-mobile-phone-png-png-335_679.png" height="100%" />
                             </div>
                         </div>
                     </div>

@@ -3,7 +3,7 @@ import React from 'react'
 const Navbar = ({ title, onClick, children }) => {
 
     return (
-        <nav className="navbar fixed-top navbar-expand-lg navbar-dark">
+        <nav className="navbar navbar-expand-lg navbar-light">
             <div className="container">
                 <a className="navbar-brand" href="#brand" onClick={(e) => {
                     e.preventDefault()

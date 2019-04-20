@@ -5,7 +5,7 @@ export default class MainPresentation extends Component {
     render() {
         return (
             <div className="container-disgraded-intro">
-                <Carousel bg="blue">
+                <Carousel bg="white">
                     <div className="container">
                         <div className="row">
                             <div className="col-md-8">

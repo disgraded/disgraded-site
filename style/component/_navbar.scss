@@ -9,4 +9,19 @@
             height: 90px;
          }
     }
+
+    .navbar-nav {
+
+        .nav-item {
+        
+            padding: 5px 10px;
+
+            .nav-link {
+                font-size: 1.25em;
+                text-transform: uppercase;
+                text-align: center;
+                height: inherit;
+            }
+        }
+    }
 }

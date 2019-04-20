@@ -1,10 +1,10 @@
 import React from 'react'
 import Navigation from '../continer/Navigation'
-import DisGradedIntro from '../continer/DisGradedIntro'
+import MainPresentation from '../continer/MainPresentation'
 
 export default () => (
     <div className="page">
         <Navigation />
-        <DisGradedIntro />
+        <MainPresentation />
     </div>
 )

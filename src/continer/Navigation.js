@@ -18,9 +18,10 @@ export default class Navigation extends Component {
         return (
             <div className="container-natigation">
                 <Navbar title="DisGraded" onClick={() => this.itemClicked(null)}>
+                    <Navbar.Item active={activeItem === 'services'} name="services" label="Services" onClick={(data) => this.itemClicked(data.name)} />
                     <Navbar.Item active={activeItem === 'games'} name="games" label="Games" onClick={(data) => this.itemClicked(data.name)} />
                     <Navbar.Item active={activeItem === 'products'} name="products" label="Products" onClick={(data) => this.itemClicked(data.name)} />
-                    <Navbar.Item active={activeItem === 'work'} name="work" label="Our Work" onClick={(data) => this.itemClicked(data.name)} />
+                    <Navbar.Item active={activeItem === 'about'} name="about" label="About" onClick={(data) => this.itemClicked(data.name)} />
                 </Navbar>
             </div>
         )

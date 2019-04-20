@@ -1,11 +1,11 @@
 import React from 'react'
 
 export default ({ children, bg = 'black' }) => (
-    <div className="presentation">
-        <div className={'presentation-content presentation-content-color-' + bg}>
+    <div className="carousel">
+        <div className={'carousel-content carousel-content-color-' + bg}>
             {children}
         </div>    
-    <div className="presentation-animation">
+    <div className="carousel-animation">
             <div className="wave-animation">
                 <div className="wave wave-top">
                     <div className="wave-bg wave-bg-top"></div>

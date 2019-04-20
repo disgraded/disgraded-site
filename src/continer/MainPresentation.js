@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import Presentation from '../component/PresentationComponent'
+import Carousel from '../component/CarouselComponent'
 
-export default class DisGradedIntro extends Component {
+export default class MainPresentation extends Component {
     render() {
         return (
             <div className="container-disgraded-intro">
-                <Presentation bg="cyan">
+                <Carousel bg="blue">
                     <div className="container">
                         <div className="row">
                             <div className="col-md-8">
@@ -16,7 +16,7 @@ export default class DisGradedIntro extends Component {
                             </div>
                         </div>
                     </div>
-                </Presentation>
+                </Carousel>
             </div>
         )
     }

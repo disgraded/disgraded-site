@@ -1,4 +1,12 @@
 .navbar-disgraded {
     padding-top: 0;
     padding-bottom: 0;
+
+    .navbar-brand {
+        padding: 0;
+        height: inherit;
+         img {
+            height: 90px;
+         }
+    }
 }

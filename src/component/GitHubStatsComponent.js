@@ -1,4 +1,5 @@
 import React from 'react'
+import Icon from './IconComponent';
 
 export default ({dark, title, description, teammates, projects, commits, milestones }) => {
     let contrast = dark ? 'dark' : 'light'
@@ -15,6 +16,7 @@ export default ({dark, title, description, teammates, projects, commits, milesto
                 <div className="row">
                     <div className="col-md-4">
                         {teammates}
+                        <Icon icon="pin_drop" />
                     </div>
                     <div className="col-md-4">
                         {projects}

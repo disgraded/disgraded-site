@@ -1,0 +1,72 @@
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+.material-icons.material-color-primary { color: $color-theme-primary-base; }
+.material-icons.material-color-secondary { color: $color-theme-secondary-base; }
+.material-icons.material-color-dark { color: $color-theme-dark; }
+.material-icons.material-color-light { color: $color-theme-light; }
+.material-icons.material-color-red { color: $color-red-500; }
+.material-icons.material-color-pink { color: $color-pink-500; }
+.material-icons.material-color-purple  { color: $color-purple-500; }
+.material-icons.material-color-deep-purple  { color: $color-deep-purple-500; }
+.material-icons.material-color-indigo  { color: $color-indigo-500; }
+.material-icons.material-color-blue  { color: $color-blue-500; }
+.material-icons.material-color-light-blue  { color: $color-light-blue-500; }
+.material-icons.material-color-cyan  { color: $color-cyan-500; }
+.material-icons.material-color-teal  { color: $color-teal-500; }
+.material-icons.material-color-green  { color: $color-green-500; }
+.material-icons.material-color-lightgreen  { color: $color-light-green-500; }
+.material-icons.material-color-lime  { color: $color-lime-500; }
+.material-icons.material-color-yellow  { color: $color-yellow-500; }
+.material-icons.material-color-amber  { color: $color-amber-500; }
+.material-icons.material-color-orange  { color: $color-orange-500; }
+.material-icons.material-color-deep-orange  { color: $color-deep-orange-500; }
+.material-icons.material-color-brown  { color: $color-brown-500; }
+.material-icons.material-color-grey  { color: $color-grey-500; }
+.material-icons.material-color-blue-grey  { color: $color-blue-grey-500; }
+
+.material-icons.material-color-hover-primary:hover { color: $color-theme-primary-base; }
+.material-icons.material-color-hover-secondary:hover { color: $color-theme-secondary-base; }
+.material-icons.material-color-hover-dark:hover { color: $color-theme-dark; }
+.material-icons.material-color-hover-light:hover { color: $color-theme-light; }
+.material-icons.material-color-hover-red:hover { color: $color-red-500; }
+.material-icons.material-color-hover-pink:hover { color: $color-pink-500; }
+.material-icons.material-color-hover-purple:hover  { color: $color-purple-500; }
+.material-icons.material-color-hover-deep-purple:hover  { color: $color-deep-purple-500; }
+.material-icons.material-color-hover-indigo:hover  { color: $color-indigo-500; }
+.material-icons.material-color-hover-blue:hover  { color: $color-blue-500; }
+.material-icons.material-color-hover-light-blue:hover  { color: $color-light-blue-500; }
+.material-icons.material-color-hover-cyan:hover  { color: $color-cyan-500; }
+.material-icons.material-color-hover-teal:hover  { color: $color-teal-500; }
+.material-icons.material-color-hover-green:hover  { color: $color-green-500; }
+.material-icons.material-color-hover-lightgreen:hover  { color: $color-light-green-500; }
+.material-icons.material-color-hover-lime:hover  { color: $color-lime-500; }
+.material-icons.material-color-hover-yellow:hover { color: $color-yellow-500; }
+.material-icons.material-color-hover-amber:hover  { color: $color-amber-500; }
+.material-icons.material-color-hover-orange:hover  { color: $color-orange-500; }
+.material-icons.material-color-hover-deep-orange:hover  { color: $color-deep-orange-500; }
+.material-icons.material-color-hover-brown:hover  { color: $color-brown-500; }
+.material-icons.material-color-hover-grey:hover  { color: $color-grey-500; }
+.material-icons.material-color-hover-blue-grey:hover  { color: $color-blue-grey-500; }

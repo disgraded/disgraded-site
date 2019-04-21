@@ -1,0 +1,12 @@
+.container-landing-info {
+    .infoarea .infoarea-text {
+        padding-left: 20px;
+        border-left: 5px solid $color-theme-primary-dark;
+    }
+
+    .githubstats .githubstats-header {
+        padding-left: 20px;
+        border-left: 5px solid $color-theme-primary-dark;
+        border-bottom: 5px solid $color-theme-primary-dark;
+    }
+}

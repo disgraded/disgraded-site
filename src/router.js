@@ -4,8 +4,7 @@ import HistoryApi from './helper/historyApi'
 import reduxStore from './reduxStore'
 import { Provider } from 'react-redux'
 
-import IndexPage from './page/indexPage'
-import QuariQPage from './page/quariqPage'
+import LandingPage from './page/landingPage'
 
 export default class Router extends Component {
 
@@ -17,8 +16,7 @@ export default class Router extends Component {
             <Provider store={store}>
                 <ReactRouter history={this.history.api}>
                     <Switch>
-                        <Route exact path="/" component={IndexPage} />
-                        <Route exact path="/quariq" component={QuariQPage} />
+                        <Route exact path="/" component={LandingPage} />
                     </Switch>
                 </ReactRouter>
             </Provider>

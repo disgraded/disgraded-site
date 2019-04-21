@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import './variables';
 @import './normalize';
 
 @import './component/navbar';
 @import './component/carousel';
 @import './component/infoarea';
-@import './component/highlightarea';
+@import './component/githubstats';
 
 @import './container/navigation';
-@import './container/mainPresentation';
-@import './container/teamInfo';
+@import './container/landingpane';
+@import './container/landinginfo';

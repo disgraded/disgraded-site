@@ -1,7 +1,19 @@
 import React from 'react'
 import Icon from './IconComponent';
 
-export default ({dark, title, description, teammates, projects, commits, milestones }) => {
+let GitHubBlock = ({ value, icon, label = "label_prop" }) => {
+    return (
+        <div className="githubstats-block">
+            <div className="block-icon">
+                <Icon color="light" hover="dark" icon={icon} />
+            </div>
+            <div className="block-label">{label}</div>
+            <div className="block-value">{value}</div>
+        </div>
+    )
+}
+
+export default ({dark, title, description, teammates, projects, commits, issues }) => {
     let contrast = dark ? 'dark' : 'light'
     title = title ? (<h2 className="githubstats-header">{title}</h2>) : ''
     description = description ? (<p className="infoarea-text">{description}</p>) : ''
@@ -14,20 +26,22 @@ export default ({dark, title, description, teammates, projects, commits, milesto
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-md-4">
-                        {teammates}
-                        <Icon icon="pin_drop" />
+                    <div className="col-md-3 col-sm-6 col-xs-12">
+                        <GitHubBlock label="Maintainers" icon="supervised_user_circle" value={teammates} />
                     </div>
-                    <div className="col-md-4">
-                        {projects}
+                    <div className="col-md-3 col-sm-6 col-xs-12">
+                        <GitHubBlock label="Projects" icon="library_books" value={projects} />
                     </div>
-                    <div className="col-md-4">
-                        {commits}
+                    <div className="col-md-3 col-sm-6 col-xs-12">
+                        <GitHubBlock label="Contributions" icon="call_split" value={commits} />
+                    </div>
+                    <div className="col-md-3 col-sm-6 col-xs-12">
+                        <GitHubBlock label="Issues" icon="table_chart" value={issues} />
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-md-12">
-                        {milestones}
+                        
                     </div>
                 </div>
             </div>

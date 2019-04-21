@@ -3,6 +3,10 @@
     color: $color-theme-text-primary-dark;
 }
 
+*:hover {
+    transition: 1s;
+}
+
 body {
     background: $color-theme-light;
 }

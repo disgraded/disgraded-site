@@ -19,3 +19,27 @@
         color: $color-theme-text-primary-dark;
     }
 }
+
+.githubstats-block {
+    margin-top: 32px;
+    padding-top: 20px;
+    width: 100%;
+    background: $color-theme-dark;
+
+    * {
+        text-align: center;
+    }
+
+    &:hover {
+        background: $color-theme-primary-dark;
+    }
+
+    .block-icon > * {
+        font-size: 2em;
+    }
+
+    .block-value {
+        font-size: 1.5em;
+        line-height: 2em;
+    }
+}

@@ -1,9 +1,15 @@
-@keyframes move_wave {
+@include keyframes(wave-animation) {
     0% {
         transform: translateX(0) translateZ(0) scaleY(1)
     }
+    25% {
+        transform: translateX(-15%) translateZ(0) scaleY(0.8)
+    }
     50% {
         transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    75% {
+        transform: translateX(-40%) translateZ(0) scaleY(0.7)
     }
     100% {
         transform: translateX(-50%) translateZ(0) scaleY(1)
@@ -83,7 +89,7 @@
             .wave-bg-top {
                 background-size: 50% 100px;
                 background-image: url('/img/style/wave-top.png');
-                animation: move-wave 3s;
+                animation: wave-animation 3s;
                 -webkit-animation: move-wave 3s;
                 -webkit-animation-delay: 1s;
                 animation-delay: 1s;
@@ -91,12 +97,12 @@
             .wave-bg-middle {
                 background-size: 50% 120px;
                 background-image: url('/img/style/wave-middle.png');
-                animation: move_wave 10s linear infinite;
+                animation: wave-animation 10s linear infinite;
             }
             .wave-bg-bottom {
                 background-size: 50% 100px;
                 background-image: url('/img/style/wave-bottom.png');
-                animation: move_wave 15s linear infinite;
+                animation: wave-animation 15s linear infinite;
             }
         }
         .wave-top { z-index: 15; opacity: 0.5; }

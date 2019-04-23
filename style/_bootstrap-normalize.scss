@@ -1,0 +1,35 @@
+// button normalization
+.btn {
+    border-radius: 0px;
+    margin: 5px;
+    outline: none;
+
+    &:focus, &:active {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    &.btn-primary {
+        background: $color-theme-accent;
+        border-color: $color-theme-primary-dark;
+        color: $color-theme-text-primary-dark;
+    }
+
+    &.btn-primary:hover, &.btn-primary:focus, &.btn-primary:active {
+        background: $color-theme-primary-light !important;
+        border-color: $color-theme-primary-dark !important;
+        color: $color-theme-text-primary-dark !important;
+    }
+    
+    &.btn-secondary {
+        background: $color-theme-secondary-base;
+        border-color: $color-theme-secondary-dark;
+        color: $color-theme-text-primary-light;
+    }
+
+    &.btn-secondary:hover, &.btn-secondary:focus, &.btn-secondary:active {
+        background: $color-theme-secondary-light !important;
+        border-color: $color-theme-secondary-base !important;
+        color: $color-theme-text-primary-light !important;
+    }
+}

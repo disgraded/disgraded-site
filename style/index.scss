@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 @import './variables';
-@import './normalize';
+@import './mixins';
 @import './material-icons';
+@import './normalize';
+@import './bootstrap-normalize';
 
 @import './component/navbar';
 @import './component/carousel';
 @import './component/infoarea';
 @import './component/githubstats';
+@import './component/quariqlayers';
 
 @import './container/navigation';
 @import './container/landingpane';

@@ -39,11 +39,6 @@ export default ({dark, title, description, teammates, projects, commits, issues 
                         <GitHubBlock label="Issues" icon="table_chart" value={issues} />
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col-md-12">
-                        
-                    </div>
-                </div>
             </div>
         </div>
     )

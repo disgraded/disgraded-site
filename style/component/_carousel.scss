@@ -13,12 +13,11 @@
 .carousel {
     width: 100%;
     height: inherit;
-    overflow: hidden;
 
     .carousel-content {
-        position: absolute;
+        // position: absolute;
         width: inherit;
-        height: inherit;
+        height: initial;
         overflow: hidden;
         padding: 40px 0;
     }
@@ -47,8 +46,7 @@
     .carousel-content-color-grey  { background: $color-grey-500; }
     .carousel-content-color-blue-grey  { background: $color-blue-grey-500; }
 
-    .carousel-animation {
-        position: relative;
+    .carousel-decoration {
         height: inherit;
         overflow: hidden;
         pointer-events: none;
@@ -57,68 +55,52 @@
             display: block;
             margin: auto;
         }
+    }
 
-        .wave-animation {
-            overflow: hidden;
+    .carousel-decoration > .wave-animation {
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        margin: auto;
+        .wave {
             position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            top: 0;
-            margin: auto;
-
-            .wave {
+            width: 100%;
+            overflow: hidden;
+            height: 100%;
+            bottom: -1px;
+            .wave-bg {
                 position: absolute;
-                width: 100%;
-                overflow: hidden;
+                left: 0;
+                width: 200%;
                 height: 100%;
-                bottom: -1px;
-
-                .wave-bg {
-                    position: absolute;
-                    left: 0;
-                    width: 200%;
-                    height: 100%;
-                    background-repeat: repeat no-repeat;
-                    background-position: 0 bottom;
-                    transform-origin: center bottom;
-                }
-
-                .wave-bg-top {
-                    background-size: 50% 100px;
-                    background-image: url('/img/style/wave-top.png');
-                    animation: move-wave 3s;
-                    -webkit-animation: move-wave 3s;
-                    -webkit-animation-delay: 1s;
-                    animation-delay: 1s;
-                }
-
-                .wave-bg-middle {
-                    background-size: 50% 120px;
-                    background-image: url('/img/style/wave-middle.png');
-                    animation: move_wave 10s linear infinite;
-                }
-
-                .wave-bg-bottom {
-                    background-size: 50% 100px;
-                    background-image: url('/img/style/wave-bottom.png');
-                    animation: move_wave 15s linear infinite;
-                }
+                background-repeat: repeat no-repeat;
+                background-position: 0 bottom;
+                transform-origin: center bottom;
             }
-
-            .wave-top {
-                z-index: 15;
-                opacity: 0.5;
+            .wave-bg-top {
+                background-size: 50% 100px;
+                background-image: url('/img/style/wave-top.png');
+                animation: move-wave 3s;
+                -webkit-animation: move-wave 3s;
+                -webkit-animation-delay: 1s;
+                animation-delay: 1s;
             }
-
-            .wave-middle {
-                z-index: 10;
-                opacity: 0.75;
+            .wave-bg-middle {
+                background-size: 50% 120px;
+                background-image: url('/img/style/wave-middle.png');
+                animation: move_wave 10s linear infinite;
             }
-
-            .wave-bottom {
-                z-index: 5;
+            .wave-bg-bottom {
+                background-size: 50% 100px;
+                background-image: url('/img/style/wave-bottom.png');
+                animation: move_wave 15s linear infinite;
             }
         }
+        .wave-top { z-index: 15; opacity: 0.5; }
+        .wave-middle { z-index: 10; opacity: 0.75; }
+        .wave-bottom { z-index: 5; }
     }
 }

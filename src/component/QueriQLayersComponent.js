@@ -13,7 +13,7 @@ export default () => {
                 </div>
                 <div className="col-md-6">
                     <div className="quariq-layers-illustration">
-
+                        <img alt="QuariQ Layers" src="/img/quariq-layer.png" />
                     </div>
                 </div>
             </div>

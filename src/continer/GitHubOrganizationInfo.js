@@ -4,6 +4,9 @@ import GitHubStats from '../component/GitHubStatsComponent'
 
 export default class GitHubOrganizationInfo extends Component {
 
+    componentDidMount() {
+        console.log('da be')
+    }
 
     render() {
         return(

@@ -4,7 +4,7 @@ import HistoryApi from './helper/historyApi'
 import reduxStore from './reduxStore'
 import { Provider } from 'react-redux'
 
-import LandingPage from './page/landingPage'
+import LandingPage from './page/LandingPage'
 
 export default class Router extends Component {
 

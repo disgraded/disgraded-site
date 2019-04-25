@@ -1,0 +1,11 @@
+footer {
+    background: $color-theme-dark;
+    height: 30px;
+
+    .footer-text {
+        color: $color-theme-light;
+        text-align: center;
+        line-height: 20px;
+        margin: 5px 0;
+    }
+}

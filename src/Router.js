@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Router as ReactRouter, Route, Switch } from 'react-router-dom'
-import HistoryApi from './helper/historyApi'
+import HistoryApi from './helper/HistoryApi'
 import reduxStore from './reduxStore'
 import { Provider } from 'react-redux'
 

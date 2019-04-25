@@ -1,5 +1,5 @@
 import { createBrowserHistory } from 'history'
-import ReduxUtil from './reduxUtil'
+import ReduxUtil from './ReduxUtil'
 
 export default class HistoryApi {
     

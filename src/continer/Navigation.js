@@ -17,7 +17,7 @@ export default class Navigation extends Component {
         return (
             <div className="container-natigation">
                 <Navbar title="DisGraded" onClick={() => this.itemClicked(null)}>
-                    <Navbar.Item name="devlogs" label="Dev Logs" onClick={(data) => this.itemClicked(data.name)} />
+                    {/* <Navbar.Item name="devlogs" label="Dev Logs" onClick={(data) => this.itemClicked(data.name)} /> */}
                 </Navbar>
             </div>
         )

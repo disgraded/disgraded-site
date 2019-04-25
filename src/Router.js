@@ -16,7 +16,7 @@ export default class Router extends Component {
             <Provider store={store}>
                 <ReactRouter history={this.history.api}>
                     <Switch>
-                        <Route exact path="/" component={LandingPage} />
+                        <Route exact path="/*" component={LandingPage} />
                     </Switch>
                 </ReactRouter>
             </Provider>

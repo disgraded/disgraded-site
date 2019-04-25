@@ -13,7 +13,7 @@ let GitHubBlock = ({ value, icon, label = "label_prop" }) => {
     )
 }
 
-export default ({dark, title, description, teammates, projects, commits, issues }) => {
+export default ({dark, title, description, maintainers, projects, contributions, issues }) => {
     let contrast = dark ? 'dark' : 'light'
     title = title ? (<h2 className="githubstats-header">{title}</h2>) : ''
     description = description ? (<p className="infoarea-text">{description}</p>) : ''
@@ -27,13 +27,13 @@ export default ({dark, title, description, teammates, projects, commits, issues 
                 </div>
                 <div className="row">
                     <div className="col-md-3 col-sm-6 col-xs-12">
-                        <GitHubBlock label="Maintainers" icon="supervised_user_circle" value={teammates} />
+                        <GitHubBlock label="Maintainers" icon="supervised_user_circle" value={maintainers} />
                     </div>
                     <div className="col-md-3 col-sm-6 col-xs-12">
                         <GitHubBlock label="Projects" icon="library_books" value={projects} />
                     </div>
                     <div className="col-md-3 col-sm-6 col-xs-12">
-                        <GitHubBlock label="Contributions" icon="call_split" value={commits} />
+                        <GitHubBlock label="Contributions" icon="call_split" value={contributions} />
                     </div>
                     <div className="col-md-3 col-sm-6 col-xs-12">
                         <GitHubBlock label="Issues" icon="table_chart" value={issues} />

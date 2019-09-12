@@ -6,7 +6,7 @@ export default () => {
             <div className="row">
                 <div className="col-md-6">
                     <h2>Our main project</h2>
-                    <p>Game engine based on JVM platform with support for Android, Windows and Linux operating systems. Extensible and friendly for any type of developer. QuariQ is writen in Kotlin but our plan is to support JavaScript and Lua as a scripting languages. <br/> <b>Currently in development phase</b></p>
+                    <p>JVM based game engine named GdxMachine. The game engine is based on popular framework for building JVM based games libGDX. The goal behind GdxMachine is to be open source, community driven, beginner friendly, feature rich game engine. <br/> <b>Currently in development phase</b></p>
                     <a href="https://github.com/disgraded/quariq"><button type="button" className="btn btn-primary">Download</button></a>
                     {/* <button type="button" class="btn btn-secondary">Dev Logs</button> */}
                 </div>

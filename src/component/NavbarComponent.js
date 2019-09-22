@@ -11,7 +11,7 @@ const Navbar = ({ title, onClick, children }) => {
                         onClick()
                     }
                 }}>
-                    <img height="80" src="/img/logo.png" alt="DisGraded Logo" />
+                    <img style={{ padding: 20 }} height="80" src="/img/logo.png" alt="DisGraded Logo" />
                 </a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
